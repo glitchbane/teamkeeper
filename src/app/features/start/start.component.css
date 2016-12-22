@@ -1,0 +1,49 @@
+.splash-back {
+  width: 100%;
+  height: 450px;
+  background-color: #0E2642;
+  margin-top: 100px;
+  padding: 25px;
+}
+
+.call {
+  margin-right: 50px;
+  margin-top: 70px;
+  float: right;
+  top: 20%;
+  font-size: 18px;
+  color: white;
+  opacity: 80;
+  font-family: 'Roboto', sans-serif;
+}
+.btn-sign-in {
+  position: absolute;
+  left: 43%;
+  top: 52%;
+  height: 80px;
+  width: 200px;
+  background-color: #69BE28;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#logo {
+  font-family: 'Alegreya', sans-serif;
+  margin-top: 100px;
+  text-align: center;
+  margin-right: 35px;
+  color: #69BE28;
+  font-size: 56px;
+  margin-bottom: 25px;
+}
+
+.silver {
+  color: #A5ACAF;
+}
+
+.tagline {
+  font-size: 32px;
+  font-style: italic;
+}
