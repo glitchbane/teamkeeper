@@ -7,12 +7,19 @@ import { PrimaryNavComponent } from './features/shared/primary-nav/primary-nav.c
 import { StartComponent } from './features/start/start.component';
 import {routing} from "./app.routing";
 import {UserAuthenticationService} from "./features/user/user-authentication.service";
+import {StateService} from "./state/state.service";
+
+import { OrgContainerComponent } from './features/organization/org-container/org-container.component';
+import { OrgListComponent } from './features/organization/org-list/org-list.component';
+import {OrgDataService} from "./features/organization/org-data.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimaryNavComponent,
-    StartComponent
+    StartComponent,
+    OrgContainerComponent,
+    OrgListComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +27,7 @@ import {UserAuthenticationService} from "./features/user/user-authentication.ser
     HttpModule,
     routing
   ],
-  providers: [UserAuthenticationService],
+  providers: [UserAuthenticationService, StateService, OrgDataService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })

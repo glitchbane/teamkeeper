@@ -1,8 +1,9 @@
 
 import {Injectable} from "@angular/core";
-import { tokenNotExpired } from 'angular2-jwt';
+
 import { tkConfig } from './user-authentication.config';
 import {Router} from "@angular/router";
+import {tokenNotExpired} from "angular2-jwt";
 
 
 declare var Auth0Lock: any;
@@ -45,7 +46,7 @@ export class UserAuthenticationService {
 
         this.userProfile = profile;
 
-        this.router.navigate(['studios']);
+        this.router.navigate(['']);
 
       });
     })
