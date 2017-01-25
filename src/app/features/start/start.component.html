@@ -1,4 +1,4 @@
-<div class="splash-back">
+<div class="splash-back" *ngIf="!authService.authenticated()">
   <div id="splash">
 
     <div id="logo"><span class="silver">GCO</span>TeamKeeper
@@ -12,4 +12,3 @@
     <!--<mtm-authentication></mtm-authentication>-->
   </div>
 </div>
-<tk-org-container></tk-org-container>

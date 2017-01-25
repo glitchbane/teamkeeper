@@ -1,1 +1,6 @@
-{{organizations.length()}}
+<div *ngFor="let org of organizations">
+  <div>
+    <p>Name: {{org.name}}</p>
+    <p>Location: {{org.location}}</p>
+  </div>
+</div>

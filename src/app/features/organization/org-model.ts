@@ -1,9 +1,9 @@
 export class Organization {
   constructor(
-    _id: string,
-    name: string,
-    location: string,
-    createdDate?: Date,
-    modifiedDate?: Date
+    public _id: string,
+    public name: string,
+    public location: string,
+    public createdDate?: Date,
+    public modifiedDate?: Date
   ){}
 }

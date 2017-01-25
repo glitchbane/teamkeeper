@@ -46,7 +46,7 @@ export class UserAuthenticationService {
 
         this.userProfile = profile;
 
-        this.router.navigate(['']);
+        this.router.navigate(['/organization']);
 
       });
     })
