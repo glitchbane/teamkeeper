@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Alegreya', sans-serif;
+  background-color: rgba(199, 214, 213, 1);
+}
+
+/* Coolors Exported Palette - coolors.co/73683b-583e23-13262f-b0a084-e9e6ff */
+
+/* HSL */
+/*$color1: hsla(48%, 32%, 34%, 1);*/
+/*$color2: hsla(31%, 43%, 24%, 1);*/
+/*$color3: hsla(199%, 42%, 13%, 1);*/
+/*$color4: hsla(38%, 22%, 60%, 1);*/
+/*$color5: hsla(247%, 100%, 95%, 1);*/
+
+/*!* RGB *!*/
+/*$color1: rgba(115, 104, 59, 1);*/
+/*$color2: rgba(88, 62, 35, 1);*/
+/*$color3: rgba(19, 38, 47, 1);*/
+/*$color4: rgba(176, 160, 132, 1);*/
+/*$color5: rgba(233, 230, 255, 1);*/

@@ -12,6 +12,9 @@ import {StateService} from "./state/state.service";
 import { OrgContainerComponent } from './features/organization/org-container/org-container.component';
 import { OrgListComponent } from './features/organization/org-list/org-list.component';
 import {OrgDataService} from "./features/organization/org-data.service";
+import { TeamContainerComponent } from './features/team/team-container/team-container.component';
+import { TeamListComponent } from './features/team/team-list/team-list.component';
+import {TeamDataService} from "./features/team/team.data.service";
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import {OrgDataService} from "./features/organization/org-data.service";
     PrimaryNavComponent,
     StartComponent,
     OrgContainerComponent,
-    OrgListComponent
+    OrgListComponent,
+    TeamContainerComponent,
+    TeamListComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,7 @@ import {OrgDataService} from "./features/organization/org-data.service";
     HttpModule,
     routing
   ],
-  providers: [UserAuthenticationService, StateService, OrgDataService],
+  providers: [UserAuthenticationService, StateService, OrgDataService, TeamDataService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })

@@ -1,6 +1,28 @@
-<div *ngFor="let org of organizations">
-  <div>
-    <p>Name: {{org.name}}</p>
-    <p>Location: {{org.location}}</p>
+<div class="flex-container">
+  <div *ngFor="let org of organizations">
+    <div id="studio-panel" class="item col-sm-6">
+      <div class="panel panel-default">
+
+        <div class="panel-heading">
+          <h3 class="panel-title">{{org.name}}</h3>
+        </div>
+
+        <a [routerLink]="[ '/organization', _id]">
+          <div class="panel-body">
+            <img src={{org.imgPath}} alt="">
+            <!--<p class="panel-text">{{studio.description}}</p>-->
+          </div>
+        </a>
+        <div id="hover-me" class="panel-footer">
+          {{ org.location}}
+          <span id="hover-content" class="pull-right">
+          <a (click)="onImage(org)"><i class="fa fa-image fa-fw"></i></a>
+          <a [routerLink]="['/studio', _id, 'edit']"><i class="fa fa-pencil fa-fw"></i></a>
+          <a (click)="onDelete(org)"><i class="fa fa-remove fa-fw"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+

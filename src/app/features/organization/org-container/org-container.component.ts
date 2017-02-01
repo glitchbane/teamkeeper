@@ -15,7 +15,7 @@ export class OrgContainerComponent implements OnInit {
   constructor(private stateService: StateService){ }
 
   ngOnInit() {
-    this.stateService.loadOrganizations();
-    this.organizations$ = this.stateService.state["organizations"];
+    // this.organizations$ = this.stateService.state["organizations"];
+    this.organizations$ = this.stateService.getOrganizationState();
   }
 }
